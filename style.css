@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Hanken Grotesk',sans-serif;
+    font-size: 18px;
+    background-color: hsl(221, 100%, 96%);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    margin: auto;
+    font-size: 22px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 290px;
+    height: 430px;
+    padding: 40px;
+    background-image: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    color:hsl(0, 0%, 100%);
+    border-radius: 20px;
+
+}
+
+.circle {
+    display: flex;
+    flex-direction:column ;
+    justify-content:center;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background: linear-gradient(hsl(255, 98%, 36%), hsl(246, 85%, 57%));
+}
+
+.bigscore {
+    font-size: 70px;
+    font-weight: 800;
+    margin: 0;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 20px;
+    height: 430px;
+    width: 290px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    border-radius: 11px;
+    padding: 15px 20px;
+    color: hsl(0,0%,60%);
+}
+
+
+img {
+    margin-right: 10px;
+}
+
+.icon-heading {
+    display: flex;
+    font-weight: 700;
+}
+
+.rxn p {
+    color: hsl(0, 100%, 67%);
+}
+
+.mem p {
+    color: hsl(39, 100%, 56%)
+}
+
+.ver p {
+    color: hsl(166, 100%, 37%);
+}
+.vis p {
+    color: hsl(234, 85%, 45%);
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%,0.3);
+}
+.memory {
+    background-color: hsla(39, 100%, 56%,0.3);
+}
+.verbal {
+    background-color:hsla(166, 100%, 37%,0.3);
+}
+.visual{
+    background-color:hsla(234, 85%, 45%,0.3);
+}
+
+.box .x-of100 {
+    color: var(--dark-gray-blue);
+    font-weight: 800;
+  }
+.num {
+    color: rgba(8, 8, 8, 0.842);
+    font-weight: 800;
+}
+button {
+    font-size: 1.1rem;
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-radius: 35px;
+    padding: 15px 35px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(247, 89%, 59%);
+  }
+
+  @media (max-width: 376px) {
+    .container {
+        flex-direction: column;
+    }
+}
